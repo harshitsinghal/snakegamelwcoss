@@ -1,0 +1,20 @@
+<template>
+    <div class="header slds-var-p-around_medium slds-text-align_center">
+        Score: {score}
+    </div>
+    <div class="game-container">
+        <template for:each={gameBlocks} for:item="block">
+            <div class={block.class} key={block.id}>&nbsp;</div>
+            <!--<template if:true={block.snake}>
+                <div class="game-block snake" key={block.id}>
+                    {block.id},
+                </div>
+            </template>
+            <template if:false={block.snake}>
+                <div class="game-block" key={block.id}>
+                    {block.id},
+                </div>
+            </template>-->
+        </template>
+    </div>
+</template>
